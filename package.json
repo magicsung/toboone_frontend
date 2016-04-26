@@ -1,0 +1,28 @@
+{
+  "name": "to_be_one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Jacksung@bitbucket.org/Jacksung/to_be_one.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Jacksung/to_be_one#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-partials": "^0.3.0",
+    "livereload": "^0.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "onchange": "^2.2.0",
+    "parallelshell": "^2.0.0",
+    "uglify-js": "^2.6.2"
+  }
+}
