@@ -152,6 +152,17 @@ ul.gray-item li a {
     color: $white;
   }
 }
+.btn-border-red {
+  border: $brand-primary 2px solid;
+  background-color: inherit;
+  color: $brand-primary;
+  &:hover {
+    color: $brand-primary-light;
+  }
+}
+.hover-none:hover {
+  background-color: $opacity;
+}
 
 
 // switch button

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
     <link rel="stylesheet" href="../css/main.css" media="screen" title="no title" charset="utf-8">
     <script src="../js/jquery-2.2.1.min.js" type="text/javascript" ></script>
     <script src="../js/app.js" type="text/javascript" ></script>
@@ -11,7 +12,116 @@
   <body>
     <% include ../partials/_header.ejs %>
 
-    <h1>to be one !!!</h1>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="banner w100">
+          <img src="/image/banner.jpg" alt="" class="w100" />
+        </div>
+        <div class="show-video w100 mt-5 clearfix">
+          <div class="major col-sm-6 xs-pd-lr-5 pd-lr-5">
+            <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" class="w100" />
+            <iframe src="https://www.youtube.com/embed/d3IQo9NgTtI" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="minor col-sm-6 xs-mt-5">
+            <div class="row">
+              <div class="col-sm-6 col-xs-6 xs-pd-lr-5 pd-lr-5">
+                <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" class="w100" />
+                <iframe src="https://www.youtube.com/embed/6VMZsMjfiEQ" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-6 col-xs-6 xs-pd-lr-5 pd-lr-5">
+                <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" class="w100" />
+                <iframe src="https://www.youtube.com/embed/B4KJau9MtpM" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-sm-6 col-xs-6 xs-pd-lr-5 pd-lr-5">
+                <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" class="w100" />
+                <iframe src="https://www.youtube.com/embed/mrEee4bhc7Y" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-6 col-xs-6 xs-pd-lr-5 pd-lr-5">
+                <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" class="w100" />
+                <iframe src="https://www.youtube.com/embed/Lhel0tzHE08" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-member mt-50 clearfix">
+          <div class="container">
+            <div class="fz-1p6em text-center color-primary-light mb-35">
+              <strong>你是各行各業的達人嗎？<span class="display-xs"><br></span>我們在找你！</strong>
+            </div>
+            <div class="clearfix">
+              <% for (var i = 0; i < 4; i++) { %>
+                <div class="col-sm-3 col-xs-6 xs-mt-15">
+                  <div class="avatar text-center">
+                    <div class="relative thumbnail center-block">
+                      <a href="#member" class="">
+                        <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail" />
+                      </a>
+                      <a href="#category">
+                        <span class="avatar-category">攝影</span>
+                      </a>
+                    </div>
+                    <div class="name mt-10">
+                      <strong>name</strong>
+                    </div>
+                    <div class="description mt-5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </div>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+            <div class="bg-gray-lighter pd-25 xs-pd-15 mt-25 text-center fz-1p1em">
+              你是各行各業的達人嗎？我們在找你！<span class="display-sm"><br></span>
+              也許你不是數學家，但是你會喜歡玩數字解夢；<span class="display-sm"><br></span>
+              也許你不是園藝學家，但是你喜歡拈花惹草；<span class="display-sm"><br></span>
+              不論你擅長的是哪方面？只要你對自己有信心，願意與他人分享、傳授你的經驗．那麼，你就是達人！
+            </div>
+            <div class="text-center mt-25">
+              <button type="button" name="button" class="btn btn-border-red width-150 height-40">我是達人</button>
+            </div>
+          </div>
+        </div>
+        <div class="witness mt-50 relative background-image-center" style="background-image: url('/image/X2-2 bg.jpg');">
+          <div class="clearfix pd-50 xs-pd-15">
+            <div class="col-sm-10 col-sm-offset-1 color-white fz-1p3em mt-40 mb-40">
+              <h3 class="fz-1p5em color-white text-center mt-0">眾樂樂　最快樂</h3>
+              <span>
+                <i class="fz-1p5em lh-1em">“</i>「我想學做蛋糕！」「我喜歡打羽球，想成為羽球國手！」「我想學攝影，拍好多好美的照片！」
+                好多好多的我想與熱愛……… <i class="fz-1p5em lh-1em">”</i><br>
+                <br>
+                在這裡，沒有年齡、行業、場地的限制，有的是求知與志同道合者．<br>
+                在這裡，沒有包裝、宣傳的問題，有的是達人網全部包辦．
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="app-promo relative">
+          <div class="app-download">
+            <img src="/image/mobile.png" alt="" class="promo-hand" />
+            <div class="app-icon">
+              <a href="#">
+                <img src="/image/apple.png" alt="apple-app" class="app-icon-ios mb-50 w100" />
+              </a>
+              <a href="#">
+                <img src="/image/google play.png" alt="android-app" class="app-icon-android w100" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 top-50 xs-top-0">
+            <div class="text-center clearfix">
+              <p class="color-black fz-2em">
+                開始達人之旅吧……
+              </p>
+              <button type="button" class="btn btn-red width-200 height-45">登入/註冊</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <% include ../partials/_footer.ejs %>
   </body>
