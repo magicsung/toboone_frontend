@@ -13,8 +13,12 @@ app.use(partials());
 
 app.get('/', function(req, res){
   res.render( __dirname + '/views/index', {
-    title: 'Tobeone 達人影音網',
-    layout: true
+    title: 'Tobeone 達人影音網'
+  } );
+});
+app.get('/landing', function(req, res){
+  res.render( __dirname + '/views/index', {
+    title: 'Tobeone 達人影音網'
   } );
 });
 
