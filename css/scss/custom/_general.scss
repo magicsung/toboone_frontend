@@ -12,12 +12,12 @@ html.noscroll {
 }
 #main-content {
   min-height: 100%;
-  margin-bottom: -295px;
+  margin-bottom: -96px;
 }
 #main-content:after {
   content: "";
   display: block;
-  height: 295px;
+  height: 96px;
 }
 a:hover,
 a:active,
