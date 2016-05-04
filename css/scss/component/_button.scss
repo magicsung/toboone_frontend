@@ -212,3 +212,12 @@ ul.gray-item li a {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
 }
+
+.inner-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  height: 40px;
+  background-color: rgba(0,0,0,0);
+  border: 0;
+}

@@ -275,8 +275,11 @@ ul.inline-block li{
 .color-gray-light {
   color: $gray-light;
 }
-.bg-red {
+.bg-primary {
   background-color: $brand-primary;
+}
+.bg-primary-dark {
+  background-color: $brand-primary-dark;
 }
 .bg-black {
   background-color: $bg-black-dark;
@@ -347,4 +350,8 @@ ul.inline-block li{
 }
 .order-4 {
   @include order(4);
+}
+
+.border-none {
+  border: none;
 }

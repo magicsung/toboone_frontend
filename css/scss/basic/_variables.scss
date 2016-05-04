@@ -27,11 +27,11 @@ $bg-black-dark:          #2D2D2D !default;
 $brand-primary:          #FF4E50 !default;
 $brand-primary-light:    lighten($brand-primary, 10%);
 $brand-primary-lighter:  #ff4711;
-$brand-primary-dark:     darken($brand-primary, 10%) !default; //#b11900
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary-dark:     #E63A3C !default; //#E63A3C
+$brand-success:          #5cb85c !default;
+$brand-info:             #5bc0de !default;
+$brand-warning:          #f0ad4e !default;
+$brand-danger:           #d9534f !default;
 
 $square-extra-large-size:382px;
 $square-large-size:      218px;

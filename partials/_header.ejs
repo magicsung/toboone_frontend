@@ -1,21 +1,21 @@
-<header class="container-fluid">
-  <div class="row">
+<header class="bg-primary-dark">
+  <div class="container-fluid">
+    <div class="row">
 
-    <div class="col-sm-6 col-xs-5 xs-pd-lr-5 brand-logo ">
-      <div class="ml-10 w100">
-        <a href="/">
-          <img src="/image/2be1_Logo.svg" class="height-40" alt="" />
-        </a>
+      <div class="col-sm-4 col-xs-5 xs-pd-lr-5 brand-logo ">
+        <div class="ml-10 w100">
+          <a href="/">
+            <img src="/image/2be1_logo_white.svg" class="height-40" alt="" />
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="col-sm-6 col-xs-7 xs-pd-lr-5 main-function ">
-      <div class="col-sm-8 col-xs-6 xs-pd-lr-5">
+      <div class="col-sm-4 xs-pd-lr-5 clearfix" id="search">
         <form action="index.html" method="post" class="hidden-xs">
           <div class="row">
             <div class="col-sm-12">
               <div class="group">
-                <input type="text" name="search" value="" placeholder="請輸入關鍵字搜尋" class="form-control pl-20">
+                <input type="text" name="search" value="" placeholder="請輸入關鍵字搜尋" class="form-control border-none pl-20">
                 <button class="inner-btn" type="submit" style=""><i class="material-icons color-gray-light mt-5">&#xE8B6;</i></button>
               </div>
             </div>
@@ -27,10 +27,24 @@
           </a>
         </div>
       </div>
-      <div class="col-sm-4 col-xs-6 xs-pd-lr-5">
-        <button type="submit" class="form-control btn btn-border-red radius-20 btn-border-red w100 xs-color-white xs-border-white">登入<span class="hidden-xs">/註冊</span></button>
-      </div>
-    </div>
 
+      <div class="col-sm-4 clearfix">
+        <ul class="inline-block link-white fz-1p1em lh-2em mt-5 pull-right">
+          <li class="ml-20">
+            <a href="#" class="">
+              <i class="material-icons fix-icon">&#xE8A6;</i>
+              <span class="hidden-xs">會員專區</span>
+            </a>
+          </li>
+          <li class="ml-20">
+            <a href="#" class="">
+              <i class="material-icons fix-icon">&#xE7F5;</i>
+              <span class="hidden-xs">通知</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </header>
