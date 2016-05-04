@@ -34,6 +34,9 @@ a:focus {
   border: 1px solid $gray-lighter;
   @include border-radius(1px);
 }
+.border-bottom-gray {
+  border-bottom: 1px solid $gray-lighter;
+}
 .title-with-gray-bg {
   font-size: 1.1em;
   font-weight: 600;
@@ -45,6 +48,10 @@ a:focus {
 .fix-icon {
   position: relative;
   top: 6px;
+}
+.fix-icon-3px {
+  position: relative;
+  top: 3px;
 }
 
 .social {
@@ -70,8 +77,14 @@ a:focus {
 .form-control {
   min-height: 40px !important;
 }
-.btn {
+.radius-20 {
   @include border-radius(20px);
+}
+.radius-5 {
+  @include border-radius(5px);
+}
+.radius-right-5 {
+  @include border-right-radius(5px);
 }
 
 .browser-message {
@@ -113,4 +126,18 @@ a:focus {
     height: 100%;
     padding: 0 5px 0 5px;
   }
+}
+
+.category .active {
+  @extend .hover-red:hover;
+}
+
+.left-arrow:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+	border-top: 15px solid transparent;
+	border-right: 15px solid $gray-lighter;
+	border-bottom: 15px solid transparent;
 }

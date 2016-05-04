@@ -81,23 +81,33 @@ ul.gray-item li a {
   }
 }
 
-.hover-red {
-  li {
-    padding-bottom: 10px;
-    border-bottom: 4px $white solid;
+.hover-red:hover {
+  border-color: $brand-primary;
+  color: $brand-primary;
+}
+
+.link-red {
+  a {
+    color: $brand-primary;
     &:hover {
-      a,a:hover {
-        color: $brand-primary;
-      }
-      border-bottom: 4px $brand-primary solid;
+      color: $brand-primary-dark;
     }
   }
 }
-
-.red-link {
-  color: $brand-primary;
-  &:hover {
+.link-red-dark {
+  a {
     color: $brand-primary-dark;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
+.link-gray {
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-light;
+    }
   }
 }
 
@@ -110,7 +120,14 @@ ul.gray-item li a {
     color: $white;
   }
 }
-
+.btn-gray-light {
+  background-color: $gray-lighter;
+  color: $gray;
+  &:hover {
+    background-color: $gray-light;
+    color: $white;
+  }
+}
 .btn-white {
   background-color: $white;
   color: $gray;
@@ -118,13 +135,6 @@ ul.gray-item li a {
   &:hover {
     background-color: $white;
     color: $gray;
-  }
-}
-
-.link-gray {
-  color: $gray;
-  &:hover {
-    color: $gray-light;
   }
 }
 

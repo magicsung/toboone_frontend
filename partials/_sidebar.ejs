@@ -1,0 +1,59 @@
+<div id="sidebar">
+
+  <div class="avatar">
+    <div class="relative">
+      <a href="#member" class="">
+        <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
+      </a>
+      <span class="fz-1p5em ml-15">name</span>
+    </div>
+  </div>
+
+  <div class="personal-function mt-20">
+    <ul class="link-red ml-30">
+      <li>
+        <a href="#" class="mt-5">
+          <i class="material-icons fix-icon">&#xE307;</i>
+          <span>我的訂閱</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="mt-5">
+          <i class="material-icons fix-icon">&#xE63A;</i>
+          <span>我的影音</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="mt-5">
+          <i class="material-icons fix-icon">&#xE639;</i>
+          <span>我的直播</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="mt-5">
+          <i class="material-icons fix-icon">&#xE0CB;</i>
+          <span>悄悄話</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="category mt-30">
+    <ul class="text-center">
+      <li class="mt-15">
+        <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em active">
+          線上直播
+        </a>
+      </li>
+      <% var category = ["最新", "熱門", "話題", "愛美", "3C", "運動", "愛車"] %>
+      <% for (x in category) { %>
+        <li class="mt-15">
+          <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em">
+            <%= category[x] %>
+          </a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+
+</div>
