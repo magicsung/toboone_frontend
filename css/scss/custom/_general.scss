@@ -141,3 +141,9 @@ a:focus {
 	border-right: 15px solid $gray-lighter;
 	border-bottom: 15px solid transparent;
 }
+
+.new-badge {
+  position: absolute;
+  right: -15px;
+  top: -3px;
+}

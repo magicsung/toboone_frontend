@@ -147,84 +147,32 @@ h1, h2, h3, h4, h5, h6, p, a{
   }
 }
 
-.mt-1 {
-  margin-top: 1px;
-}
-.mb-1 {
-  margin-bottom: 1px;
-}
-.ml-m10 {
-  margin-left: -10px;
-}
-.ml-m15 {
-  margin-left: -15px;
-}
-.pl-20 {
-  padding-left: 20px !important;
-}
-.pd-0 {
-  padding: 0;
-}
-.pb-10 {
-  padding-bottom: 10px;
-}
-.pt-10 {
-  padding-top: 10px;
-}
-.pd-lr-5 {
-  padding: 0 5px 0 5px;
-}
-.pd-lr-10 {
-  padding: 0 10px 0 10px;
-}
-.new-badge {
-  position: absolute;
-  right: -15px;
-  top: -3px;
-}
-.display-xs {
-  display: none !important;
-}
-.display-sm {
-  display: inline !important;
-}
+.mt-1 { margin-top: 1px; }
+.mb-1 { margin-bottom: 1px; }
+.ml-m10 { margin-left: -10px; }
+.ml-m15 { margin-left: -15px; }
+.pl-20 { padding-left: 20px !important; }
+.pd-0 { padding: 0; }
+.pb-10 { padding-bottom: 10px; }
+.pt-10 { padding-top: 10px; }
+.pd-lr-5 { padding: 0 5px 0 5px; }
+.pd-lr-10 { padding: 0 10px 0 10px; }
+.display-xs { display: none !important; }
+.display-sm { display: inline !important; }
+
 @include bp(xs) {
-  .xs-pd-0 {
-    padding: 0;
-  }
-  .xs-pd-15 {
-    padding: 15px;
-  }
-  .xs-pd-lr-5 {
-    padding: 0 5px 0 5px;
-  }
-  .xs-margin-0 {
-    margin: 0;
-  }
-  .xs-mt-5 {
-    margin-top: 5px;
-  }
-  .xs-mt-15 {
-    margin-top: 15px;
-  }
-  .xs-mb-15 {
-    margin-bottom: 15px;
-  }
-  .xs-mt-0 {
-    margin-top: 0;
-  }
-  .xs-mb-0 {
-    margin-bottom: 0;
-  }
-  .xs-w100 {
-    width: 100%;
-  }
-  .display-xs {
-    display: inline !important;
-  }
-  .display-sm {
-    display: none !important;
-  }
+  .xs-pd-0 { padding: 0; }
+  .xs-pd-15 { padding: 15px; }
+  .xs-pd-lr-5 { padding: 0 5px 0 5px; }
+  .xs-margin-0 { margin: 0; }
+  .xs-mt-5 { margin-top: 5px; }
+  .xs-mt-15 { margin-top: 15px; }
+  .xs-mb-15 { margin-bottom: 15px; }
+  .xs-mt-0 { margin-top: 0; }
+  .xs-mb-0 { margin-bottom: 0; }
+  .xs-w100 { width: 100%; }
+  .display-xs { display: inline !important; }
+  .display-sm { display: none !important; }
 };
 
 .top-50 {
@@ -254,24 +202,13 @@ h1, h2, h3, h4, h5, h6, p, a{
   margin-right: -10px;
 }
 
-.relative {
-  position: relative;
-}
-.inline-block {
-  display: inline-block;
-}
-ul.inline-block li{
-  display: inline-block;
-}
-.inline {
-  display: inline;
-}
-.block {
-  display: block;
-}
-.flex {
-  @include flexbox();
-}
+.relative { position: relative; }
+.inline-block { display: inline-block; }
+ul.inline-block li { display: inline-block; }
+.inline { display: inline; }
+.block { display: block; }
+.flex { @include flexbox(); }
+
 .xs-flex {
   @include bp(xs) {
     @include flexbox();
@@ -288,51 +225,22 @@ ul.inline-block li{
   }
 }
 
-.color-white {
-  color: $white;
-}
-.color-black {
-  color: $black;
-}
-.color-primary {
-  color: $brand-primary;
-}
-.color-primary-light {
-  color: $brand-primary-light;
-}
-.color-gray {
-  color: $gray;
-}
-.color-gray-light {
-  color: $gray-light;
-}
-.bg-primary {
-  background-color: $brand-primary;
-}
-.bg-primary-dark {
-  background-color: $brand-primary-dark;
-}
-.bg-black {
-  background-color: $bg-black-dark;
-}
-.bg-white {
-  background-color: $white;
-}
-.bg-gray {
-  background-color: $gray;
-}
-.bg-gray-light {
-  background-color: $gray-light;
-}
-.bg-gray-lighter {
-  background-color: $gray-lighter;
-}
-.bg-light {
-  background-color: $bg-light;
-}
-.bg-opacity {
-  background-color: $opacity;
-}
+.color-white { color: $white; }
+.color-black { color: $black; }
+.color-primary { color: $brand-primary; }
+.color-primary-light { color: $brand-primary-light; }
+.color-gray { color: $gray; }
+.color-gray-light { color: $gray-light; }
+.bg-primary { background-color: $brand-primary; }
+.bg-primary-dark { background-color: $brand-primary-dark; }
+.bg-black { background-color: $bg-black-dark; }
+.bg-white { background-color: $white; }
+.bg-gray { background-color: $gray; }
+.bg-gray-light { background-color: $gray-light; }
+.bg-gray-lighter { background-color: $gray-lighter; }
+.bg-light { background-color: $bg-light; }
+.bg-opacity { background-color: $opacity; }
+
 @include bp(xs) {
   .xs-color-white {
     color: $white;
@@ -361,34 +269,15 @@ ul.inline-block li{
 .text-justify        { text-align: justify; }
 .text-nowrap         { white-space: nowrap; }
 
-
 @include bp(xs) {
-  .xs-order-1 {
-    @include order(1);
-  }
-  .xs-order-2 {
-    @include order(2);
-  }
-  .xs-order-3 {
-    @include order(3);
-  }
-  .xs-order-4 {
-    @include order(4);
-  }
+  .xs-order-1 { @include order(1); }
+  .xs-order-2 { @include order(2); }
+  .xs-order-3 { @include order(3); }
+  .xs-order-4 { @include order(4); }
 }
-.order-1 {
-  @include order(1);
-}
-.order-2 {
-  @include order(2);
-}
-.order-3 {
-  @include order(3);
-}
-.order-4 {
-  @include order(4);
-}
+.order-1 { @include order(1); }
+.order-2 { @include order(2); }
+.order-3 { @include order(3); }
+.order-4 { @include order(4); }
 
-.border-none {
-  border: none;
-}
+.border-none { border: none; }
