@@ -18,7 +18,8 @@ app.get('/', function(req, res){
 });
 app.get('/landing', function(req, res){
   res.render( __dirname + '/views/landing', {
-    title: 'Tobeone 達人影音網'
+    title: 'Tobeone 達人影音網',
+    layout: false
   } );
 });
 

@@ -1,34 +1,7 @@
 <div class="content bg-white radius-5 mt-15">
   <div class="border-bottom-gray pd-20">
     <div class="row">
-      <div class="col-md-1 col-sm-2">
-        <div class="avatar mb-15">
-          <div class="relative">
-            <a href="#member" class="">
-              <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-11 col-sm-10 custom-content mb-20">
-        <a href="#" class="btn btn-sm btn-gray-light radius-5 pull-right">取消關注</a>
-        <div class="name fz-1p4em link-red">
-          <a href="#">NAME</a>
-        </div>
-        <div class="fz-1p2em">
-          <span class="title">title</span>
-          <span class="time-ago fz-p8em"> - about 21 hour ago</span>
-        </div>
-        <div class="description mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-        <div class="video mt-15 relative inline-block">
-          <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" />
-          <div class="overlay">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/b-JD5I_B6LY" frameborder="0" allowfullscreen></iframe> -->
-          </div>
-        </div>
-      </div>
+      <% include ../partials/post/_post-content.ejs %>
     </div>
   </div>
   <div class="bg-white clearfix radius-5">
@@ -66,111 +39,19 @@
           <span class="comments-count">100</span>則留言
         </a>
       </div>
-      <div class="comments-major clearfix mt-20">
-        <div class="avatar w10 xs-w20 pull-left">
-          <div class="relative">
-            <a href="#member" class="">
-              <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
-            </a>
-          </div>
-        </div>
-        <div class="w80 pd-lr-10 pull-left">
-          <div class="comment-detail">
-            <div class="name fz-1p2em color-primary">
-              NAME
-            </div>
-            <div class="comments">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div>
-            <div class="reply-comment mt-5 link-red-dark">
-              <a href="#">回覆</a> <span class="fz-p8em"> - <span class="time-ago">14小時前</span></span>
-            </div>
-          </div>
+      <div class="link-red-dark">
+        <a href="#" class="">
+          查看全部<span class="reply-count">6</span>則回覆
+          <i class="material-icons fix-icon">&#xE5C5;</i>
+        </a>
+      </div>
 
-          <div class="comments-minor link-red-dark clearfix">
-            <div class="mt-10">
-              <div class="avatar w10 xs-w20 pull-left">
-                <div class="relative">
-                  <a href="#member" class="">
-                    <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-tiny" />
-                  </a>
-                </div>
-              </div>
-              <div class="w80 pull-left pd-lr-5">
-                <div class="name fz-1em color-primary">
-                  NAME
-                </div>
-                <div class="comments">
-                  <span comment>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                  - <span class="time-ago fz-p8em">14小時前</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <% include ../partials/post/_comment.ejs %>
 
-          <div class="reply-minor mt-10 clearfix">
-            <div class="avatar w10 xs-w20 pull-left">
-              <div class="relative">
-                <a href="#member" class="">
-                  <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-tiny" />
-                </a>
-              </div>
-            </div>
-            <input type="text" name="name" placeholder="回覆..." class="pd-5 mt-5 radius-5 border-none">
-          </div>
-        </div>
-      </div>
-      <div class="comments-major clearfix mt-15">
-        <div class="avatar w10 xs-w20 pull-left">
-          <div class="relative">
-            <a href="#member" class="">
-              <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
-            </a>
-          </div>
-        </div>
-        <div class="w70 ml-10 pull-left">
-          <div class="comment-detail">
-            <div class="name fz-1p2em color-primary">
-              NAME
-            </div>
-            <div class="comments">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div>
-            <div class="reply-comment mt-5 link-red-dark">
-              <a href="#">回覆</a> <span class="fz-p8em"> - <span class="time-ago">14小時前</span></span>
-            </div>
-          </div>
-          <div class="link-red-dark">
-            <a href="#" class="">
-              查看全部<span class="reply-count">6</span>則回覆
-              <i class="material-icons fix-icon">&#xE5C5;</i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="new-comments mt-15">
-        <div class="">
-          <div class="w10 xs-w20 pull-left">
-            <div class="avatar">
-              <div class="relative">
-                <a href="#member" class="">
-                  <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w70 ml-10 pull-left">
-            <form action="index.html" method="post" class="mt-5 clearfix">
-              <div class="w80 pull-left">
-                <input type="text" placeholder="留言......" class="form-control radius-5 w100">
-              </div>
-              <div class="w20 pull-left">
-                <button type="submit" name="button" class="btn btn-gray height-40 radius-5 ml-5">發送</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+      <% include ../partials/post/_comment.ejs %>
+
+      <% include ../partials/post/_new-comment.ejs %>
+
     </div>
   </div>
 
