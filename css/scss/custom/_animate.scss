@@ -1,31 +1,31 @@
 @keyframes slideInLeft {
   from {
-    transform: translate3d(-100%, 0, 0);
+    @include translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    @include translate3d(0, 0, 0);
   }
 }
 .slideInLeft {
-  animation-name: slideInLeft;
+  @include animation-name(slideInLeft);
 }
 @keyframes slideOutLeft {
   from {
-    transform: translate3d(0, 0, 0);
+    @include translate3d(0, 0, 0);
   }
 
   to {
     visibility: hidden;
-    transform: translate3d(-100%, 0, 0);
+    @include translate3d(-100%, 0, 0);
   }
 }
 
 .slideOutLeft {
-  animation-name: slideOutLeft;
+  @include animation-name(slideOutLeft);
 }
 .animated {
-  animation-duration: .6s;
-  animation-fill-mode: both;
+  @include animation-duration(.6s);
+  @include animation-fill-mode(both);
 }
