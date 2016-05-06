@@ -79,6 +79,10 @@ header {
         min-height: 40px !important;
         display: block;
         width: 100%;
+        @include border-radius(0);
+      }
+      > a:active, a:focus {
+        box-shadow: none;
       }
     }
   }
