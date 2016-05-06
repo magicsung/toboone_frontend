@@ -46,6 +46,16 @@
           <span>悄悄話</span>
         </a>
       </li>
+      <li class="display-xs-block">
+        <a href="#" class="mt-5">
+          <span>我的最新關注</span>
+        </a>
+      </li>
+      <li class="display-xs-block">
+        <a href="#" class="mt-5">
+          <span>我的人氣關注</span>
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -56,12 +66,16 @@
           分類
         </a>
       </li>
-      <li class="mt-15">
+      <li class="mt-15 popover popover-sticky hidden-xs">
         <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em active">
-          線上直播
+          我的關注
         </a>
+        <ul>
+          <li><a href="#">最新關注</a></li>
+          <li><a href="#">人氣關注</a></li>
+        </ul>
       </li>
-      <% var category = ["最新", "熱門", "話題", "愛美", "3C", "運動", "愛車"] %>
+      <% var category = ["線上直播", "最新", "熱門", "話題", "愛美", "3C", "運動", "愛車"] %>
       <% for (x in category) { %>
         <li class="mt-15">
           <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em">

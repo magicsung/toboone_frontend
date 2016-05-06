@@ -45,3 +45,33 @@
     display: block;
   }
 }
+
+.popover.popover-sticky {
+  margin-bottom: 25px;
+  ul {
+    display: block;
+    position: relative;
+    left: 10%;
+    top: 10px;
+    width: 80%;
+    li { border-bottom: 1px solid $gray-lighter; }
+    li:last-child { border-bottom: none; }
+    a { padding: 7px; }
+    a:before {
+      content: "";
+      height: 6px;
+      width: 6px;
+      display: inline-block;
+      background-color: $brand-primary-dark;
+      @include border-radius(50%);
+      position: relative;
+      line-height: 1em;
+      vertical-align: middle;
+      left: -15px;
+    }
+  }
+  ul:before, ul:after {
+    left: 50%;
+    @include translateX( -50% );
+  }
+}
