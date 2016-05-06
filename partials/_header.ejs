@@ -1,16 +1,14 @@
-<header class="bg-primary-dark">
+<header class="bg-primary-dark xs-fixed-header">
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-sm-4 col-xs-5 xs-pd-lr-5 brand-logo ">
-        <div class="ml-10 w100">
-          <a href="/">
-            <img src="/image/2be1_logo_white.svg" class="height-40" alt="" />
-          </a>
-        </div>
+      <div class="col-sm-4 col-xs-5 xs-pd-0 brand-logo ">
+        <a href="/" class="ml-10 w100 block">
+          <img src="/image/2be1_logo_white.svg" class="height-40" alt="" />
+        </a>
       </div>
 
-      <div class="col-sm-4 xs-pd-lr-5 clearfix" id="search">
+      <div class="col-sm-4 xs-pd-0 clearfix hidden-xs" id="search">
         <form action="index.html" method="post" class="hidden-xs">
           <div class="row">
             <div class="col-sm-12">
@@ -21,23 +19,24 @@
             </div>
           </div>
         </form>
-        <div class="display-xs pull-right">
-          <a href="#">
-            <button class="btn btn-gray height-40 bg-opacity hover-none" type="button">
-              <i class="material-icons color-white fz-2em">&#xE8B6;</i>
-            </button>
-          </a>
-          <a href="#">
-            <button class="btn btn-gray height-40 bg-opacity hover-none" type="button">
-              <i class="material-icons color-white fz-2em">&#xE5D2;</i>
-            </button>
-          </a>
-        </div>
       </div>
 
-      <div class="col-sm-4 clearfix">
-        <ul class="inline-block link-white fz-1p1em lh-2em mt-5 pull-right">
-          <li class="ml-20 hidden-xs">
+      <div class="display-xs pull-right">
+        <a href="#search" class="xs-search">
+          <button class="btn btn-gray height-45 bg-opacity hover-none" type="button">
+            <i class="material-icons color-white fz-2em">&#xE8B6;</i>
+          </button>
+        </a>
+        <a href="#menu" class="xs-menu" id="xs-menu-action" alt="">
+          <button class="btn btn-gray height-45 bg-opacity hover-none" type="button">
+            <i class="material-icons color-white fz-2em">&#xE5D2;</i>
+          </button>
+        </a>
+      </div>
+
+      <div class="col-sm-4 clearfix hidden-xs">
+        <ul class="inline-block link-white fz-1p1em lh-2em pull-right">
+          <li class="ml-20">
             <a href="#" class="">
               <i class="material-icons fix-icon">&#xE8A6;</i>
               <span class="hidden-xs">會員專區</span>
@@ -54,4 +53,5 @@
 
     </div>
   </div>
+
 </header>

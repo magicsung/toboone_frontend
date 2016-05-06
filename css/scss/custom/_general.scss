@@ -83,6 +83,11 @@ a:focus {
 .radius-5 {
   @include border-radius(5px);
 }
+.xs-radius-0 {
+  @include bp(xs) {
+    @include border-radius(0);
+  };
+}
 .radius-right-5 {
   @include border-right-radius(5px);
 }

@@ -27,7 +27,8 @@ $bg-black-dark:          #2D2D2D !default;
 $brand-primary:          #FF4E50 !default;
 $brand-primary-light:    lighten($brand-primary, 10%);
 $brand-primary-lighter:  #ff4711;
-$brand-primary-dark:     #E63A3C !default; //#E63A3C
+$brand-primary-dark:     #E63A3C !default;
+$brand-primary-darker:   darken($brand-primary-dark, 20%) !default;
 $brand-success:          #5cb85c !default;
 $brand-info:             #5bc0de !default;
 $brand-warning:          #f0ad4e !default;
@@ -61,7 +62,7 @@ $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 
-
+$header-height:           45px;
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
