@@ -23,7 +23,7 @@ app.get('/landing', function(req, res){
   } );
 });
 
-http.listen(8080, function(){
+http.listen(8080, "0.0.0.0", function(){
   console.log('listening on *:8080');
 });
 
