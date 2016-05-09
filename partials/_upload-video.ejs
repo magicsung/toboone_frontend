@@ -1,0 +1,119 @@
+<div class="uploads bg-white pd-40 xs-pd-15 radius-5 xs-radius-0">
+  <div class="video-preview text-center">
+    <img src="http://dummyimage.com/320x180/cccccc/fff&text=video-preview" alt="" class="xs-w100" />
+  </div>
+  <div class="upload-video mt-15">
+    <h4>
+      <i class="material-icons fix-icon">&#xE064;</i>
+      上傳影片
+    </h4>
+    <div class="ml-30">
+      <div class="">
+        <span class="inline-block">上傳影片檔案</span>
+        <input type="file" name="name" value="" class="inline-block ml-15 xs-w100">
+      </div>
+      <div class="">
+        <p>
+          將影片提交到 達人網 即表示您同意遵守達人網的
+          <a href="#">《服務條款》</a>
+          和
+          <a href="#">《社群規範》</a>
+        </p>
+        <ul class="dot ml-25">
+          <li>不允許商業、政治或是任何形式的廣告內容。達人網只允許用於個人和非營利。</li>
+          <li>不要上傳電視節目、你在其他網站找到的影片或是遊戲影片。</li>
+          <li>當然也不可以上傳成人或是色情內容的影片。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="video-info mt-15">
+    <h4>
+      <i class="material-icons fix-icon">&#xE02F;</i>
+      填寫影片資訊
+    </h4>
+    <div class="ml-30">
+      <div class="form-group">
+        <label for="video-name">影片名稱</label>
+        <input type="text" name="video-name" value="" placeholder="請輸入影片名稱..." id="video-name" class="form-control radius-5">
+      </div>
+      <div class="form-group">
+        <label for="video-description">影片描述</label>
+        <textarea name="video-description" rows="8" cols="40" placeholder="請輸入影片描述..." id="video-description" class="form-control radius-5"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="video-category">分類</label>
+        <div class="relative">
+          <select class="form-control radius-5" name="video-category" id="video-category">
+            <option value="0">請選擇分類</option>
+            <option value="cat1">分類1</option>
+            <option value="cat2">分類2</option>
+            <option value="cat3">分類3</option>
+          </select>
+          <label for="video-category" class="material-icons inner-btn" style="right: 10px; top:8px;">&#xE313;</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="video-privacy">隱私設定</label>
+        <div class="relative">
+          <select class="form-control radius-5" name="video-privacy" id="video-privacy">
+            <option value="p1">不公開</option>
+            <option value="p2">只有關注我的人</option>
+            <option value="p3">公開</option>
+          </select>
+          <label for="video-privacy" class="material-icons inner-btn" style="right: 10px; top:8px;">&#xE313;</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">同步分享至其他社群網站</label>
+        <div class="mt-10">
+
+          <div class="inline-block mr-15">
+            <div class="onoffswitch facebook">
+              <input type="checkbox" name="reg-subscription" class="onoffswitch-checkbox" id="share-fb" checked>
+              <label class="onoffswitch-label" for="share-fb">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="inline-block mr-15">
+            <div class="onoffswitch google">
+              <input type="checkbox" name="reg-subscription" class="onoffswitch-checkbox" id="share-google">
+              <label class="onoffswitch-label" for="share-google">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="inline-block mr-15">
+            <div class="onoffswitch weibo">
+              <input type="checkbox" name="reg-subscription" class="onoffswitch-checkbox" id="share-weibo">
+              <label class="onoffswitch-label" for="share-weibo">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="video-thumbnail mt-15">
+    <h4>
+      <i class="material-icons fix-icon">&#xE251;</i>
+      選擇縮圖
+    </h4>
+    <div class="ml-30">
+      <img src="http://dummyimage.com/160x90/cccccc/fff&text=thumbnail" alt="" class="ml-5 xs-mt-5"/>
+      <img src="http://dummyimage.com/160x90/cccccc/fff&text=thumbnail" alt="" class="ml-5 xs-mt-5"/>
+      <img src="http://dummyimage.com/160x90/cccccc/fff&text=thumbnail" alt="" class="ml-5 xs-mt-5 active"/>
+    </div>
+  </div>
+  <div class="confirm mt-50 text-center">
+    <a href="#" class="btn btn-red width-250">完成</a>
+  </div>
+</div>

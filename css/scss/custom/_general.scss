@@ -80,6 +80,9 @@ a:focus {
 .radius-20 {
   @include border-radius(20px);
 }
+.radius-10 {
+  @include border-radius(10px);
+}
 .radius-5 {
   @include border-radius(5px);
 }
@@ -91,6 +94,10 @@ a:focus {
 .radius-right-5 {
   @include border-right-radius(5px);
 }
+
+.square-120 { height: 120px;width: 120px; }
+.square-80 { height: 80px;width: 80px; }
+.square-60 { height: 60px;width: 60px; }
 
 .browser-message {
   display: none;
@@ -151,4 +158,21 @@ a:focus {
   position: absolute;
   right: -15px;
   top: -3px;
+}
+
+img.active {
+  border: 3px solid $brand-primary;
+}
+
+.line-right {
+  border-right: 2px solid $gray-lighter;
+  height: 60%;
+  width: calc(50% + 1px);
+}
+.red-ball {
+  height: 20px;
+  width: 20px;
+  border: 2px solid $gray-lighter;
+  @include border-radius( 50% );
+  background-color: $brand-primary;
 }

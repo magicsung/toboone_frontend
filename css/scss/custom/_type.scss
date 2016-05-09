@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6, p, a{
   }
 }
 
+.h100 { height: 100%; }
 .mt-1 { margin-top: 1px; }
 .mb-1 { margin-bottom: 1px; }
 .ml-m10 { margin-left: -10px; }
@@ -205,11 +206,11 @@ h1, h2, h3, h4, h5, h6, p, a{
   margin-right: -10px;
 }
 
-.relative { position: relative; }
-.inline-block { display: inline-block; }
-ul.inline-block li { display: inline-block; }
-.inline { display: inline; }
-.block { display: block; }
+.relative { position: relative !important; }
+.inline-block { display: inline-block !important; }
+ul.inline-block li { display: inline-block !important; }
+.inline { display: inline !important; }
+.block { display: block !important; }
 .flex { @include flexbox(); }
 
 .xs-flex {
@@ -285,3 +286,7 @@ ul.inline-block li { display: inline-block; }
 .order-4 { @include order(4); }
 
 .border-none { border: none; }
+
+ul.dot {
+  list-style: disc;
+}
