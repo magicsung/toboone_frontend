@@ -13,7 +13,13 @@
         <span class="display-xs-block mt-10"></span>
         <label for="" class="bg-light radius-5 pd-5 ml-15 xs-margin-0">上傳格式wmv,avi,mov,flv,mpg</label>
         <input type="file" name="name" value="" class="hidden" id="upload-file">
-        <label for="upload-file" class="btn btn-blue-light radius-5 ml-10">上傳</label>
+        <label for="upload-file" class="btn btn-gray radius-5 ml-10">選擇檔案...</label>
+        <button type="button" name="button" class="btn btn-blue-light radius-5 ml-10">上傳！</button>
+      </div>
+      <div class="progress xs-mt-15">
+        上傳中...
+        <span class="progress-bar"></span>
+        <span class="progress-ok down ml-5">OK!</span>
       </div>
       <div class="">
         <p>
@@ -38,6 +44,9 @@
     <div class="ml-30 xs-margin-0">
       <div class="form-group">
         <label for="video-name">影片名稱</label>
+        <span class="notice color-primary ml-15 fw-700">
+          請輸入影片名稱！
+        </span>
         <input type="text" name="video-name" value="" placeholder="請輸入影片名稱..." id="video-name" class="form-control border-none bg-light radius-5">
       </div>
       <div class="form-group">
