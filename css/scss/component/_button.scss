@@ -139,6 +139,14 @@ ul.gray-item li a {
     color: $gray;
   }
 }
+.btn-blue-light {
+  background-color: $blue-light;
+  color: $white;
+  &:hover {
+    background-color: $blue-lighter;
+    color: $white;
+  }
+}
 
 .hover-white:hover {
   color: $white;
