@@ -4,6 +4,7 @@
 .onoffswitch {
     position: relative;
     width: 110px;
+    @include bp(xs) { width: 90px; }
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
@@ -26,12 +27,14 @@
     content: "ON";
     padding-left: 10px;
     background-color: $green; color: $white;
+    @include bp(xs) { font-size: 10px; };
 }
 .onoffswitch-inner:after {
     content: "OFF";
     padding-right: 10px;
     background-color: $gray-lighter; color: $white;
     text-align: right;
+    @include bp(xs) { font-size: 10px; };
 }
 .onoffswitch-switch {
     display: block;
@@ -40,6 +43,7 @@
     background: $white;
     position: absolute; top: 0; bottom: 0;
     right: 78px;
+    @include bp(xs) { right: 58px; }
     border: 1px solid $gray-light; border-radius: 20px;
     @include transition(all 0.3s ease-in 0s);
 }
