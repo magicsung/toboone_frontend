@@ -7,7 +7,7 @@ $( document ).ready(function() {
   });
 });
 
-function toggleMenu() {
+function toggleMenu(e) {
   $('html').toggleClass("noscroll");
   if ( $("#xs-menu-action").attr("alt") == "" ) {
     $("#xs-menu-action").attr("alt", "active").addClass("active");
