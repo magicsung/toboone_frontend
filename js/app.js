@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){$(".popover").on("click",function(e){e.preventDefault();$(this).toggleClass("open")})});
+"use strict";$(document).ready(function(){$("#xs-menu-action").click(function(){$("html").toggleClass("noscroll")});$(".popover").on("click",function(n){n.preventDefault();$(this).toggleClass("open")})});
