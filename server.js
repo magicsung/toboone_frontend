@@ -21,6 +21,11 @@ app.get('/upload', function(req, res){
     title: '上傳影片'
   } );
 });
+app.get('/talent', function(req, res){
+  res.render( __dirname + '/views/talent', {
+    title: '達人頁面'
+  } );
+});
 app.get('/landing', function(req, res){
   res.render( __dirname + '/views/landing', {
     title: 'Tobeone 達人影音網',

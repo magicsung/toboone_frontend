@@ -79,23 +79,6 @@ a:focus {
 .form-control {
   min-height: 40px !important;
 }
-.radius-20 {
-  @include border-radius(20px);
-}
-.radius-10 {
-  @include border-radius(10px);
-}
-.radius-5 {
-  @include border-radius(5px);
-}
-.xs-radius-0 {
-  @include bp(xs) {
-    @include border-radius(0);
-  };
-}
-.radius-right-5 {
-  @include border-right-radius(5px);
-}
 
 .square-120 { height: 120px;width: 120px; }
 .square-80 { height: 80px;width: 80px; }
@@ -177,4 +160,10 @@ img.active {
   border: 2px solid $gray-lighter;
   @include border-radius( 50% );
   background-color: $brand-primary;
+}
+
+span.material-icons {
+  position: relative;
+  top: 8px;
+  line-height: 0em;
 }

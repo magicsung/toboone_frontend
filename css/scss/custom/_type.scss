@@ -163,6 +163,10 @@ h1, h2, h3, h4, h5, h6, p, a{
 .display-xs { display: none !important; }
 .display-sm { display: inline !important; }
 .display-xs-block { display: none !important; }
+.radius-20 { @include border-radius(20px);}
+.radius-10 { @include border-radius(10px);}
+.radius-5 { @include border-radius(5px);}
+.radius-right-5 { @include border-right-radius(5px);}
 
 @include bp(xs) {
   .xs-pd-0 { padding: 0; }
@@ -182,6 +186,7 @@ h1, h2, h3, h4, h5, h6, p, a{
   .display-xs { display: inline !important; }
   .display-xs-block { display: block !important; }
   .display-sm { display: none !important; }
+  .xs-radius-0 { @include border-radius(0); }
 };
 
 .top-50 {
@@ -213,7 +218,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 
 .relative { position: relative !important; }
 .inline-block { display: inline-block !important; }
-ul.inline-block li { display: inline-block !important; }
+ul.inline-block > li { display: inline-block !important; }
 .inline { display: inline !important; }
 .block { display: block !important; }
 .flex { @include flexbox(); }
