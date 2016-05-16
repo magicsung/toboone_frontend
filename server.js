@@ -13,17 +13,21 @@ app.use(partials());
 
 app.get('/', function(req, res){
   res.render( __dirname + '/views/index', {
+    sidebar: true,
     title: 'Tobeone 達人影音網'
   } );
 });
 app.get('/upload', function(req, res){
   res.render( __dirname + '/views/upload', {
+    sidebar: false,
     title: '上傳影片'
   } );
 });
-app.get('/talent', function(req, res){
+app.get('/talent/:name', function(req, res){
   res.render( __dirname + '/views/talent', {
-    title: '達人頁面'
+    sidebar: true,
+    title: '達人頁面',
+    name: req.params.name
   } );
 });
 app.get('/landing', function(req, res){

@@ -18,6 +18,14 @@
       <div class="container-fluid mt-15 mb-15 header-height">
         <div class="row">
 
+          <% if (sidebar) { %>
+            <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated bg-white radius-5 xs-radius-0" id="sidebar">
+          <% } else { %>
+            <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated bg-white radius-5 xs-radius-0 display-xs-block" id="sidebar">
+          <% } %>
+            <% include ../partials/_sidebar.ejs %>
+          </div>
+
           <%- body %>
 
         </div>
