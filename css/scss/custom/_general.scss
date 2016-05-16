@@ -34,7 +34,6 @@ a:focus {
 }
 .border {
   border: 1px solid $gray-lighter;
-  @include border-radius(1px);
 }
 .border-bottom-gray {
   border-bottom: 1px solid $gray-lighter;
@@ -74,10 +73,6 @@ a:focus {
       }
     }
   }
-}
-
-.form-control {
-  min-height: 40px !important;
 }
 
 .square-120 { height: 120px;width: 120px; }
