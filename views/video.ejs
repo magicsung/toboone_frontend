@@ -1,0 +1,36 @@
+<div class="col-xs-12 pd-0">
+  <div class="video-large w100 bg-black text-center">
+    <div class="relative inline-block">
+      <img src="http://dummyimage.com/860x480/2D2D2D/2D2D2D" alt="" class="xs-w100" />
+      <div class="overlay">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NU3OhfQxnco?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-15 mb-15 header-height">
+  <div class="row">
+
+    <% var showSideBar = (sidebar ? '' : 'display-xs-block') %>
+    <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated bg-white radius-5 xs-radius-0 <%= showSideBar%>" id="sidebar">
+      <% include ../partials/_sidebar.ejs %>
+    </div>
+
+    <div class="col-xs-12 xs-pd-0">
+
+      <div class="post col-md-8 col-sm-7 xs-pd-0">
+            <% var video = false; %>
+            <% include ../partials/_post.ejs %>
+      </div>
+
+      <div class="video-list col-md-4 col-sm-5 mt-15 xs-pd-0">
+        <div class="bg-white radius-5 xs-radius-0 pd-15">
+          <% include ../partials/_video-list.ejs %>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

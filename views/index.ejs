@@ -1,10 +1,21 @@
-<div class="col-sm-8 col-md-9 xs-pd-0">
+<div class="container-fluid mt-15 mb-15 header-height">
+  <div class="row">
 
-  <% include ../partials/post/_new-post.ejs %>
+    <% var showSideBar = (sidebar ? '' : 'display-xs-block') %>
+    <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated xs-radius-0 <%= showSideBar%>" id="sidebar">
+      <% include ../partials/_sidebar.ejs %>
+    </div>
 
-  <div class="posts">
-    <% include ../partials/_post.ejs %>
-    <% include ../partials/_post.ejs %>
+    <div class="col-sm-8 col-md-9 xs-pd-0">
+
+      <% include ../partials/post/_new-post.ejs %>
+
+      <div class="posts">
+        <% include ../partials/_post.ejs %>
+        <% include ../partials/_post.ejs %>
+      </div>
+
+    </div>
+
   </div>
-
 </div>

@@ -7,6 +7,19 @@
     </div>
   </div>
   <div class="pull-left w100-65">
+    <div class="inline-block pull-right relative">
+      <a href="#" class="radius-5 ml-15 dropdown-toggle">
+        <i class="material-icons">&#xE313;</i>
+      </a>
+      <ul class="dropdown-menu pt-10 radius-5">
+        <li class="ml-15 mb-5">檢舉這部影片：</li>
+        <li><a href="#">檢舉原因1</a></li>
+        <li><a href="#">檢舉原因2</a></li>
+        <li><a href="#">檢舉原因3</a></li>
+        <li><a href="#">檢舉原因4</a></li>
+        <li><a href="#">檢舉原因5</a></li>
+      </ul>
+    </div>
     <a href="#" class="btn btn-xs btn-gray-light radius-5 pull-right">關注中</a>
     <div class="name fz-1p4em link-red">
       <a href="/talent/ooo">NAME</a>
@@ -24,10 +37,14 @@
   <div class="more mt-5">
     <a href="#">展開全部...</a>
   </div>
-  <div class="video mt-15 relative inline-block">
-    <img src="http://dummyimage.com/640x360/cccccc/fff&text=video" alt="" />
-    <div class="overlay">
-      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/b-JD5I_B6LY" frameborder="0" allowfullscreen></iframe> -->
+  <% if (typeof video == 'undefined') { %>
+    <div class="video mt-15 relative inline-block">
+      <a href="/video/xxx">
+        <img src="http://dummyimage.com/640x360/cccccc/fff&text=play-video" alt="" />
+        <div class="overlay">
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/b-JD5I_B6LY" frameborder="0" allowfullscreen></iframe> -->
+        </div>
+      </a>
     </div>
-  </div>
+  <% } %>
 </div>

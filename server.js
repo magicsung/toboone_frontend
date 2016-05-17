@@ -30,6 +30,13 @@ app.get('/talent/:name', function(req, res){
     name: req.params.name
   } );
 });
+app.get('/video/:id', function(req, res){
+  res.render( __dirname + '/views/video', {
+    sidebar: false,
+    title: '影片內頁',
+    id: req.params.id
+  } );
+});
 app.get('/landing', function(req, res){
   res.render( __dirname + '/views/landing', {
     title: 'Tobeone 達人影音網',

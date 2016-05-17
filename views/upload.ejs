@@ -1,7 +1,18 @@
-<div class="col-lg-2 col-sm-3 col-md-3 xs-pd-0 hidden-xs">
-  <% include ../partials/_upload-step.ejs %>
-</div>
+<div class="container-fluid mt-15 mb-15 header-height">
+  <div class="row">
 
-<div class="col-lg-10 col-sm-9 col-md-9 xs-pd-0">
-  <% include ../partials/_upload-video.ejs %>
+    <% var showSideBar = (sidebar ? '' : 'display-xs-block') %>
+    <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated bg-white radius-5 xs-radius-0 <%= showSideBar%>" id="sidebar">
+      <% include ../partials/_sidebar.ejs %>
+    </div>
+
+    <div class="col-lg-2 col-sm-3 col-md-3 xs-pd-0 hidden-xs">
+      <% include ../partials/_upload-step.ejs %>
+    </div>
+
+    <div class="col-lg-10 col-sm-9 col-md-9 xs-pd-0">
+      <% include ../partials/_upload-video.ejs %>
+    </div>
+
+  </div>
 </div>

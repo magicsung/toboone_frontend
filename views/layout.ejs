@@ -1,37 +1,12 @@
 <!DOCTYPE html>
 <html class="">
-  <head>
-    <meta charset="utf-8">
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
-    <link rel="stylesheet" href="../css/main.css" media="screen" title="no title" charset="utf-8">
-    <script src="../../js/jquery-2.2.1.min.js" type="text/javascript" ></script>
-    <script src="../../js/app.js" type="text/javascript" ></script>
-  </head>
+  <% include ../partials/_page-head.ejs %>
   <body class="bg-gray-lighter">
     <div id="main-content">
       <input type="checkbox" class="hidden" id="toggle-menu" checked>
       <% include ../partials/_header.ejs %>
-
-      <div class="container-fluid mt-15 mb-15 header-height">
-        <div class="row">
-
-          <% if (sidebar) { %>
-            <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated bg-white radius-5 xs-radius-0" id="sidebar">
-          <% } else { %>
-            <div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated bg-white radius-5 xs-radius-0 display-xs-block" id="sidebar">
-          <% } %>
-            <% include ../partials/_sidebar.ejs %>
-          </div>
-
-          <%- body %>
-
-        </div>
-      </div>
+      <%- body %>
     </div>
-
     <% include ../partials/_footer.ejs %>
   </body>
 </html>
