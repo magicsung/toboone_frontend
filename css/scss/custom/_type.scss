@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 .radius-10 { @include border-radius(10px);}
 .radius-5 { @include border-radius(5px);}
 .radius-right-5 { @include border-right-radius(5px);}
+.w100-115 { width: calc(100% - 115px); }
 .w100-80 { width: calc(100% - 80px); }
 .w100-65 { width: calc(100% - 65px); }
 .w100-50 { width: calc(100% - 50px); }

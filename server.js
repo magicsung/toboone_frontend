@@ -37,6 +37,12 @@ app.get('/video/:id', function(req, res){
     id: req.params.id
   } );
 });
+app.get('/my-follows', function(req, res){
+  res.render( __dirname + '/views/my-follows', {
+    sidebar: true,
+    title: '我的關注'
+  } );
+});
 app.get('/own-videos', function(req, res){
   res.render( __dirname + '/views/own-videos', {
     sidebar: true,
