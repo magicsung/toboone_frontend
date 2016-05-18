@@ -67,10 +67,11 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 @for $i from 1 to 9  { .lh-1p#{$i}em { line-height: #{1 + $i * 0.1}em; } }
 @for $i from 1 to 5  { .fz-#{$i}em { font-size: #{$i}em; } }
 @for $i from 1 to 9  { .fz-1p#{$i}em { font-size: #{1 + $i*0.1}em; } }
-@for $i from 1 to 9  { .fz-p#{$i}em { font-size: #{$i*0.1}em; } }
+@for $i from 1 to 10  { .fz-p#{$i}em { font-size: #{$i*0.1}em; } }
 @for $i from 1 to 10 { .width-#{$i*50} { width: #{$i*50}px; } }
 @for $i from 1 to 11 { .w#{$i*10} { width: #{$i*10%} !important; } }
 @for $i from 1 to 8  { .fw-#{$i*100} { font-weight: #{$i*100}; } }
+@for $i from 1 to 11  { .top-#{$i}px { top: #{$i}px; } }
 
 @include bp(xs) {
   @for $i from 0 to 11 { .xs-pd-#{$i*5} { padding: #{$i*5}px !important; } }

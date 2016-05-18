@@ -37,6 +37,12 @@ app.get('/video/:id', function(req, res){
     id: req.params.id
   } );
 });
+app.get('/own-videos', function(req, res){
+  res.render( __dirname + '/views/own-videos', {
+    sidebar: true,
+    title: '我的影音'
+  } );
+});
 app.get('/landing', function(req, res){
   res.render( __dirname + '/views/landing', {
     title: 'Tobeone 達人影音網',

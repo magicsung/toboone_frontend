@@ -1,0 +1,37 @@
+<div class="content bg-white radius-5 xs-radius-0 pd-20">
+
+  <div class="title fz-1p6em">
+    <i class="material-icons relative top-6px fz-1p3em">&#xE63A;</i>
+    <span>我的影音</span>
+  </div>
+
+  <div class="border-bottom-gray-1px mt-15"></div>
+  <% for(var i = 0; i < 6; i++) { %>
+    <div class="list-item border-bottom-gray-1px pd-20">
+      <div class="row">
+        <div class="col-xs-4">
+          <a href="#">
+            <img src="http://dummyimage.com/640x360/cccccc/fff&text=play-video" alt="" class="w100" />
+          </a>
+        </div>
+        <div class="col-xs-8 h100">
+          <div class="edit pull-right">
+            <button class="btn btn-sm btn-blue-light radius-5">
+              <i class="material-icons fz-1p2em relative top-3px">&#xE254;</i>
+              編輯
+            </button>
+          </div>
+          <div class="title fz-1p2em link-red">
+            <a href="#">標題 title</a>
+          </div>
+          <div class="fz-p9em">
+            <div class="category">分類：<span>熱門</span></div>
+            <div class="privacy">隱私設定：<span>公開</span></div>
+            <div class="view-count">觀看次數：<span>123,456</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% } %>
+
+</div>
