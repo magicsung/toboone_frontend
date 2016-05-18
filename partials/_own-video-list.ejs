@@ -1,32 +1,32 @@
-<div class="content bg-white radius-5 xs-radius-0 pd-20">
+<div class="content bg-white radius-5 xs-radius-0 pd-20 xs-pd-lr-5">
 
-  <div class="title fz-1p6em">
+  <div class="title fz-1p6em xs-ml-5">
     <i class="material-icons relative top-6px fz-1p3em">&#xE63A;</i>
     <span>我的影音</span>
   </div>
 
   <div class="border-bottom-gray-1px mt-15"></div>
   <% for(var i = 0; i < 6; i++) { %>
-    <div class="list-item border-bottom-gray-1px pd-20">
+    <div class="list-item border-bottom-gray-1px pd-20 xs-pd-15">
       <div class="row">
-        <div class="col-xs-4">
+        <div class="col-md-3 col-xs-5 pd-lr-5">
           <a href="#">
             <img src="http://dummyimage.com/640x360/cccccc/fff&text=play-video" alt="" class="w100" />
           </a>
         </div>
-        <div class="col-xs-8 h100">
+        <div class="col-md-9 col-xs-7 pd-lr-5 h100">
           <div class="edit pull-right">
-            <a href="/edit-video" class="btn btn-sm btn-blue-light radius-5">
-              <i class="material-icons fz-1p2em relative top-3px">&#xE254;</i>
-              編輯
+            <a href="/edit-video" class="btn btn-xs btn-blue-light radius-5 xs-bg-white">
+              <i class="material-icons fz-1p2em relative top-3px xs-color-gray">&#xE254;</i>
+              <span class="hidden-xs">編輯</span>
             </a>
           </div>
           <div class="title fz-1p2em link-red">
             <a href="#">標題 title</a>
           </div>
           <div class="fz-p9em">
-            <div class="category">分類：<span>熱門</span></div>
-            <div class="privacy">隱私設定：<span>公開</span></div>
+            <div class="category hidden-xs">分類：<span>熱門</span></div>
+            <div class="privacy hidden-xs">隱私設定：<span>公開</span></div>
             <div class="view-count">觀看次數：<span>123,456</span></div>
           </div>
         </div>
