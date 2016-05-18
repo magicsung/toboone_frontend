@@ -1,12 +1,13 @@
 <div class="uploads bg-white pd-40 xs-pd-15 radius-5 xs-radius-0">
 
   <% include ../partials/video/_video-preview.ejs %>
-  <% include ../partials/video/_uploader.ejs %>
-  <% var shareSwitch = true %>
+  <% var shareSwitch = false %>
   <% include ../partials/video/_video-info.ejs %>
   <% include ../partials/video/_video-thumbnails.ejs %>
 
-    <div class="confirm mt-50 text-center">
-    <a href="#" class="btn btn-red width-250">完成</a>
+  <div class="confirm mt-50 text-center">
+    <button class="btn btn-white height-40 width-200 mr-15 xs-w40">取消</button>
+    <a href="#" class="btn btn-red width-200 xs-w40">完成</a>
   </div>
+
 </div>

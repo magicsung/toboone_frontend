@@ -1,89 +1,92 @@
-<div class="bg-white pd-40 sidebar-wrap xs-mb-45 radius-5">
+<% var showSideBar = (sidebar ? '' : 'display-xs-block') %>
+<div class="col-sm-4 col-md-3 xs-pd-0 xs-pb-45 animated xs-radius-0 <%= showSideBar%>" id="sidebar">
+  <div class="bg-white pd-40 sidebar-wrap xs-mb-45 radius-5">
 
-  <div class="avatar">
-    <div class="relative">
-      <a href="#member" class="">
-        <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
-      </a>
-      <span class="fz-1p5em ml-15">name</span>
+    <div class="avatar">
+      <div class="relative">
+        <a href="#member" class="">
+          <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
+        </a>
+        <span class="fz-1p5em ml-15">name</span>
+      </div>
     </div>
-  </div>
 
-  <div class="personal-function mt-20">
-    <ul class="link-red ml-30 xs-list">
-      <li class="display-xs-block bg-light">
-        <a href="#" class="mt-5">
-          個人專區
-        </a>
-      </li>
-      <li class="display-xs-block notice">
-        <a href="#" class="mt-5">
-          <span>通知</span>
-          <span class="badge bg-primary-dark pull-right">9</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="mt-5">
-          <i class="material-icons relative top-7px hidden-xs">&#xE307;</i>
-          <span>我的訂閱</span>
-        </a>
-      </li>
-      <li>
-        <a href="/own-videos" class="mt-5">
-          <i class="material-icons relative top-7px hidden-xs">&#xE63A;</i>
-          <span>我的影音</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="mt-5">
-          <i class="material-icons relative top-7px hidden-xs">&#xE639;</i>
-          <span>我的直播</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="mt-5">
-          <i class="material-icons relative top-7px hidden-xs">&#xE0CB;</i>
-          <span>悄悄話</span>
-        </a>
-      </li>
-      <li class="display-xs-block">
-        <a href="#" class="mt-5">
-          <span>我的最新關注</span>
-        </a>
-      </li>
-      <li class="display-xs-block">
-        <a href="#" class="mt-5">
-          <span>我的人氣關注</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="category mt-30">
-    <ul class="text-center xs-mb-40 xs-list">
-      <li class="display-xs-block bg-light">
-        <a href="#" class="mt-5">
-          分類
-        </a>
-      </li>
-      <li class="mt-15 popover popover-sticky hidden-xs">
-        <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em active height-40">
-          我的關注
-        </a>
-        <ul>
-          <li><a href="#">最新關注</a></li>
-          <li><a href="#">人氣關注</a></li>
-        </ul>
-      </li>
-      <% var category = ["線上直播", "最新", "熱門", "話題", "愛美", "3C", "運動", "愛車"] %>
-      <% for (x in category) { %>
-        <li class="mt-15">
-          <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em height-40">
-            <%= category[x] %>
+    <div class="personal-function mt-20">
+      <ul class="link-red ml-30 xs-list">
+        <li class="display-xs-block bg-light">
+          <a href="#" class="mt-5">
+            個人專區
           </a>
         </li>
-      <% } %>
-    </ul>
-  </div>
+        <li class="display-xs-block notice">
+          <a href="#" class="mt-5">
+            <span>通知</span>
+            <span class="badge bg-primary-dark pull-right">9</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mt-5">
+            <i class="material-icons relative top-7px hidden-xs">&#xE307;</i>
+            <span>我的訂閱</span>
+          </a>
+        </li>
+        <li>
+          <a href="/own-videos" class="mt-5">
+            <i class="material-icons relative top-7px hidden-xs">&#xE63A;</i>
+            <span>我的影音</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mt-5">
+            <i class="material-icons relative top-7px hidden-xs">&#xE639;</i>
+            <span>我的直播</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mt-5">
+            <i class="material-icons relative top-7px hidden-xs">&#xE0CB;</i>
+            <span>悄悄話</span>
+          </a>
+        </li>
+        <li class="display-xs-block">
+          <a href="#" class="mt-5">
+            <span>我的最新關注</span>
+          </a>
+        </li>
+        <li class="display-xs-block">
+          <a href="#" class="mt-5">
+            <span>我的人氣關注</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
+    <div class="category mt-30">
+      <ul class="text-center xs-mb-40 xs-list">
+        <li class="display-xs-block bg-light">
+          <a href="#" class="mt-5">
+            分類
+          </a>
+        </li>
+        <li class="mt-15 popover popover-sticky hidden-xs">
+          <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em active height-40">
+            我的關注
+          </a>
+          <ul>
+            <li><a href="#">最新關注</a></li>
+            <li><a href="#">人氣關注</a></li>
+          </ul>
+        </li>
+        <% var category = ["線上直播", "最新", "熱門", "話題", "愛美", "3C", "運動", "愛車"] %>
+        <% for (x in category) { %>
+          <li class="mt-15">
+            <a href="#" class="form-control hover-red radius-20 lh-1p5em fz-1p1em height-40">
+              <%= category[x] %>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+
+  </div>
 </div>
