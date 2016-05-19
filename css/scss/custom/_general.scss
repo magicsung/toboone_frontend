@@ -153,3 +153,9 @@ span.material-icons {
 
 .hover-show-item { display: none; }
 .hover-show:hover .hover-show-item { display: inline; }
+
+.pagination {
+  li {
+    @extend .pd-lr-5;
+  }
+}

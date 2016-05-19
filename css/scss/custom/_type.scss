@@ -112,6 +112,7 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 .w100-50 { width: calc(100% - 50px); }
 .top-0 { top: 0; }
 .top-50 { top: 50%; @include translateY( -50% ); }
+.right-5 { right: 5px; }
 
 @include bp(xs) {
   .xs-pl-15 { padding-left: 15px; }
@@ -160,6 +161,7 @@ ul.inline-block > li { display: inline-block !important; }
 .color-gray-light { color: $gray-light; }
 .bg-primary { background-color: $brand-primary; }
 .bg-primary-dark { background-color: $brand-primary-dark; }
+.bg-primary-darker { background-color: $brand-primary-darker; }
 .bg-black { background-color: $bg-black-dark; }
 .bg-white { background-color: $white; }
 .bg-gray { background-color: $gray; }

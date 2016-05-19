@@ -1,0 +1,59 @@
+<div class="content bg-white radius-5 xs-radius-0">
+  <div class="border-bottom-gray-1px pd-20">
+
+    <div class="row">
+      <div class="col-xs-12 xs-pd-lr-5">
+
+        <div class="mobile-search display-xs-block mb-15 relative">
+          <form action="/search" method="get">
+            <input type="text" name="keyword" class="form-control radius-5 border" placeholder="請輸入關鍵字搜尋">
+            <button class="inner-btn right-5" type="submit"><i class="material-icons color-gray-light">&#xE8B6;</i></button>
+          </form>
+        </div>
+
+        <div class="title">
+          <span class="fz-1p1em fw-700">搜尋關鍵字：</span>
+          <span><%= keyword %></span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="result-list">
+      <div class="row mt-15">
+        <% for(var i = 0; i < 12; i++) { %>
+          <div class="col-sm-4 col-xs-6 mb-15 xs-pd-lr-5">
+            <div class="pd-lr-10 xs-pd-0">
+              <div class="video-thumbnail">
+                <a href="/video/xxx">
+                  <img src="http://dummyimage.com/640x360/cccccc/fff&text=video-img" alt="" class="w100" />
+                </a>
+              </div>
+              <div class="talent-name mt-5 fz-1p1em link-red"><a href="/talent/name">NAME</a></div>
+              <div class="title">Title</div>
+              <div class="color-gray-light fz-p8em">
+                <div class="views">觀看次數：<span class="views-count">123,124</span></div>
+                <div class="likes-comments">
+                  <span clsss="likes-count">1.2萬</span>人喜歡
+                  <span class="pd-lr-5">|</span>
+                  <span class="comments-count">100</span>則留言
+                </div>
+              </div>
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+
+    <div class="pagination mt-30 text-center fz-1p1em">
+      <ul class="inline-block">
+        <li><a href="#"><i class="material-icons relative top-7px">&#xE408;</i></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#"><i class="material-icons relative top-7px">&#xE409;</i></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>

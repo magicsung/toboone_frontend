@@ -9,12 +9,12 @@
       </div>
 
       <div class="col-sm-4 xs-pd-0 clearfix hidden-xs" id="search">
-        <form action="index.html" method="post" class="hidden-xs">
+        <form action="/search" method="get" class="hidden-xs">
           <div class="row">
             <div class="col-sm-12">
               <div class="group">
-                <input type="text" name="search" value="" placeholder="請輸入關鍵字搜尋" class="form-control border-none pl-20 radius-20 height-40">
-                <button class="inner-btn" type="submit" style=""><i class="material-icons color-gray-light mt-5">&#xE8B6;</i></button>
+                <input type="text" name="keyword" value="" placeholder="請輸入關鍵字搜尋" class="form-control border-none pl-20 radius-20 height-40">
+                <button class="inner-btn" type="submit"><i class="material-icons color-gray-light mt-5">&#xE8B6;</i></button>
               </div>
             </div>
           </div>
@@ -22,7 +22,7 @@
       </div>
 
       <div class="display-xs-inline pull-right">
-        <a href="#search" class="xs-search">
+        <a href="/search" class="xs-search">
           <button class="btn btn-gray height-45 bg-opacity hover-none" type="button">
             <i class="material-icons color-white fz-2em">&#xE8B6;</i>
           </button>

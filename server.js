@@ -61,6 +61,13 @@ app.get('/edit-profile', function(req, res){
     title: '編輯個人資料'
   } );
 });
+app.get('/search', function(req, res){
+  res.render( __dirname + '/views/search-result', {
+    sidebar: true,
+    title: req.query.keyword + '的搜尋結果',
+    keyword: req.query.keyword
+  } );
+});
 app.get('/landing', function(req, res){
   res.render( __dirname + '/views/landing', {
     title: 'Tobeone 達人影音網',
