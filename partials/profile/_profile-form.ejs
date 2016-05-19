@@ -1,0 +1,63 @@
+<div class="profile table-cell pull-left w100-115 xs-w100 xs-mt-15">
+  <div class="w100">
+    <div class="lh-2em">
+      <div class="mb-5 mt-15 fw-700 inline-block">帳號</div>
+      <div class="ml-15 inline-block">username@gamil.com</div>
+    </div>
+    <div class="lh-2em">
+      <div class="mb-5 mt-15 fw-700">已連結帳號</div>
+      <div class="mt-5">
+        <% include ./_account-switch.ejs %>
+      </div>
+    </div>
+    <div class="lh-2em">
+      <div class="mb-5 mt-15 fw-700">會員暱稱</div>
+      <div class="mt-5">
+        <input type="text" name="nickname" value="" placeholder="請輸入會員暱稱..." id="nickname" class="form-control border-none bg-light radius-5">
+      </div>
+    </div>
+    <div class="lh-2em">
+      <div class="mb-5 mt-15 fw-700">個人簡介</div>
+      <div class="mt-5">
+        <textarea name="person-info" rows="6" cols="40" placeholder="請輸入個人簡介內容..." id="person-info" class="form-control border-none bg-light radius-5"></textarea>
+      </div>
+    </div>
+    <div class="lh-2em">
+      <div class="mb-5 mt-15 fw-700">行動電話</div>
+      <div class="mt-5">
+        <input type="tel" name="mobile-phone" value="" placeholder="請輸入行動電話..." id="mobile-phone" class="form-control border-none bg-light radius-5">
+      </div>
+    </div>
+    <div class="lh-2em clearfix">
+      <div class="mb-5 mt-15 fw-700">居住地區</div>
+      <div class="mt-5">
+        <div class="relative w50 pull-left pr-5">
+          <select class="form-control border-none bg-light radius-5" name="city" id="city">
+            <option value="c1">台北市</option>
+            <option value="c2">新北市</option>
+          </select>
+          <label for="video-privacy" class="material-icons inner-btn" style="right: 10px; top:5px;">&#xE313;</label>
+        </div>
+        <div class="relative w50 pull-left">
+          <select class="form-control border-none bg-light radius-5" name="district" id="district">
+            <option value="d1">大安區</option>
+            <option value="d2">信義區</option>
+          </select>
+          <label for="video-privacy" class="material-icons inner-btn" style="right: 10px; top:5px;">&#xE313;</label>
+        </div>
+      </div>
+    </div>
+    <div class="lh-2em">
+      <div class="mb-5 mt-15 fw-700">修改密碼 <span class="fw-400 ml-15 fz-p9em">不修改密碼請留空</span></div>
+      <div class="mt-5">
+        <input type="password" name="password" value="" placeholder="請輸入舊密碼" id="password" class="form-control border-none bg-light radius-5">
+      </div>
+      <div class="mt-5">
+        <input type="password" name="new-password" value="" placeholder="輸入新密碼" id="new-password" class="form-control border-none bg-light radius-5">
+      </div>
+      <div class="mt-5">
+        <input type="password" name="confirm-password" value="" placeholder="確認新密碼" id="confirm-password" class="form-control border-none bg-light radius-5">
+      </div>
+    </div>
+  </div>
+</div>

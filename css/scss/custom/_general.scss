@@ -150,3 +150,6 @@ span.material-icons {
   top: 8px;
   line-height: 0em;
 }
+
+.hover-show-item { display: none; }
+.hover-show:hover .hover-show-item { display: inline; }

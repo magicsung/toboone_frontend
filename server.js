@@ -55,6 +55,12 @@ app.get('/edit-video', function(req, res){
     title: '編輯影音'
   } );
 });
+app.get('/edit-profile', function(req, res){
+  res.render( __dirname + '/views/edit-profile', {
+    sidebar: true,
+    title: '編輯個人資料'
+  } );
+});
 app.get('/landing', function(req, res){
   res.render( __dirname + '/views/landing', {
     title: 'Tobeone 達人影音網',

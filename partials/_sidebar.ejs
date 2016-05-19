@@ -6,8 +6,16 @@
       <div class="relative">
         <a href="#member" class="">
           <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail-small" />
+          <span class="fz-1p6em ml-5">name</span>
         </a>
-        <span class="fz-1p5em ml-15">name</span>
+        <span class="relative hidden-xs">
+          <a href="#" class="ml-5 dropdown-toggle">
+            <i class="material-icons fz-1em relative top-1px">&#xE254;</i>
+          </a>
+          <ul class="dropdown-menu radius-5 width-100">
+            <li><a href="/edit-profile">編輯個人資料</a></li>
+          </ul>
+        </span>
       </div>
     </div>
 
@@ -16,6 +24,11 @@
         <li class="display-xs-block bg-light">
           <a href="#" class="mt-5">
             個人專區
+          </a>
+        </li>
+        <li class="display-xs-block">
+          <a href="/edit-profile" class="mt-5">
+            <span>編輯個人資料</span>
           </a>
         </li>
         <li class="display-xs-block notice">
