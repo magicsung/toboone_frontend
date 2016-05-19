@@ -1,0 +1,23 @@
+<div class="container-fluid mt-15 mb-15 header-height">
+  <div class="row">
+
+      <% include ../partials/_sidebar.ejs %>
+
+    <div class="col-sm-8 col-sm-offset-2 col-md-9 xs-pd-0">
+
+      <% switch (url) {
+        case "/about" : %>
+          <% include ../partials/about/_about.ejs %>
+          <% break; %>
+        <% case "/privacy" : %>
+          <% include ../partials/about/_privacy.ejs %>
+          <% break; %>
+        <% case "/policies" : %>
+          <% include ../partials/about/_policies.ejs %>
+          <% break; %>
+      <% } %>
+
+    </div>
+
+  </div>
+</div>

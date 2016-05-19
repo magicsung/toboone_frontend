@@ -74,6 +74,27 @@ app.get('/landing', function(req, res){
     layout: false
   } );
 });
+app.get('/about', function(req, res){
+  res.render( __dirname + '/views/about', {
+    sidebar: false,
+    title: '關於達人網',
+    url: req.originalUrl
+  } );
+});
+app.get('/policies', function(req, res){
+  res.render( __dirname + '/views/about', {
+    sidebar: false,
+    title: '服務條款',
+    url: req.originalUrl
+  } );
+});
+app.get('/privacy', function(req, res){
+  res.render( __dirname + '/views/about', {
+    sidebar: false,
+    title: '隱私政策',
+    url: req.originalUrl
+  } );
+});
 
 http.listen(8080, "0.0.0.0", function(){
   console.log('listening on *:8080');
