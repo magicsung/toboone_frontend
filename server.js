@@ -123,6 +123,13 @@ app.get('/privacy', function(req, res){
     url: req.originalUrl
   } );
 });
+app.get('/question', function(req, res){
+  res.render( __dirname + '/views/about', {
+    sidebar: false,
+    title: '常見問題',
+    url: req.originalUrl
+  } );
+});
 
 http.listen(8080, "0.0.0.0", function(){
   console.log('listening on *:8080');
