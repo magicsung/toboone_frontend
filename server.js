@@ -24,6 +24,13 @@ app.get('/login', function(req, res){
     title: '登入 Tobeone 達人影音網'
   } );
 });
+app.get('/register', function(req, res){
+  res.render( __dirname + '/views/register', {
+    layout: 'layout-login',
+    sidebar: false,
+    title: '註冊 Tobeone 達人影音網'
+  } );
+});
 app.get('/upload', function(req, res){
   res.render( __dirname + '/views/upload', {
     sidebar: false,

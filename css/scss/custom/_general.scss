@@ -161,3 +161,11 @@ span.material-icons {
     @extend .pd-lr-5;
   }
 }
+
+.bg-image {
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  @include bp(xs) {
+    background-image: none !important;  
+  };
+}
