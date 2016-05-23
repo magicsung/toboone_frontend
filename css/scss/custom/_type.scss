@@ -6,15 +6,6 @@ a {
   }
 }
 
-.link-white {
-  a {
-    color: $white;
-    &:hover {
-      color: $gray-lighter;
-    }
-  }
-}
-
 ul {
   margin-bottom: 0;
   list-style-type: none;
@@ -62,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 @for $i from 0 to 15 { .ml-#{$i*5} { margin-left: #{$i*5}px; } }
 @for $i from 0 to 11 { .mr-#{$i*5} { margin-right: #{$i*5}px; } }
 @for $i from 0 to 11 { .mb-#{$i*5} { margin-bottom: #{$i*5}px; } }
-@for $i from 2 to 10 { .height-#{$i*5} { height: #{$i*5}px; } }
+@for $i from 2 to 11 { .height-#{$i*5} { height: #{$i*5}px; } }
 @for $i from 1 to 10 { .lh-#{$i}em { line-height: #{$i}em; } }
 @for $i from 1 to 9  { .lh-1p#{$i}em { line-height: #{1 + $i * 0.1}em; } }
 @for $i from 1 to 5  { .fz-#{$i}em { font-size: #{$i}em; } }
@@ -83,6 +74,7 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 };
 
 .h100 { height: 100%; }
+.h100-31 { height: calc( 100% - 31px); }
 .mt-1 { margin-top: 1px; }
 .mb-1 { margin-bottom: 1px; }
 .ml-m10 { margin-left: -10px; }
@@ -111,8 +103,10 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 .w100-65 { width: calc(100% - 65px); }
 .w100-50 { width: calc(100% - 50px); }
 .top-0 { top: 0; }
+.bottom-0 { bottom:0; }
 .top-50 { top: 50%; @include translateY( -50% ); }
 .right-5 { right: 5px; }
+.width-80 { width: 80px; }
 
 @include bp(xs) {
   .xs-pl-15 { padding-left: 15px; }
