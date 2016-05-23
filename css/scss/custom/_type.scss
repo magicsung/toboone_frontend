@@ -213,3 +213,15 @@ ul.inline-block > li { display: inline-block !important; }
 ul.dot {
   list-style: disc;
 }
+i.red-dot {
+  content: "";
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  background-color: $brand-primary-dark;
+  @include border-radius(50%);
+  position: relative;
+  line-height: 1em;
+  vertical-align: middle;
+  left: -15px;
+}

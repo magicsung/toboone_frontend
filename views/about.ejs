@@ -3,7 +3,40 @@
 
       <% include ../partials/_sidebar.ejs %>
 
-    <div class="col-sm-8 col-sm-offset-2 col-md-9 xs-pd-0">
+    <div class="col-md-3 col-sm-4 hidden-xs">
+      <div class="bg-white radius-5 pd-20">
+        <div class="radius-5">
+
+          <div class="pd-10 mt-10">
+            <a href="/about">
+              <i class="red-dot ml-20"></i>
+              關於達人網
+            </a>
+          </div>
+          <div class="pd-10 mt-10">
+            <a href="/policies">
+              <i class="red-dot ml-20"></i>
+              服務條款
+            </a>
+          </div>
+          <div class="pd-10 mt-10">
+            <a href="/privacy">
+              <i class="red-dot ml-20"></i>
+              隱私政策
+            </a>
+          </div>
+          <div class="pd-10 mt-10">
+            <a href="/question">
+              <i class="red-dot ml-20"></i>
+              常見問題
+            </a>
+          </div>　 　
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9 col-sm-8 xs-pd-0">
 
       <% switch (url) {
         case "/about" : %>
