@@ -32,15 +32,17 @@ a:focus {
   padding-bottom: 6px;
   font-weight: normal;
 }
-.border {
-  border: 1px solid $gray-lighter;
-}
-.border-bottom-gray-1px {
-  border-bottom: 1px solid $gray-lighter;
-}
-.border-bottom-gray-2px {
-  border-bottom: 2px solid $gray-lighter;
-}
+
+.border { border: 1px solid $gray-lighter; }
+.border-right-gray-1px { border-right: 1px solid $gray-lighter; }
+.border-left-gray-1px { border-left: 1px solid $gray-lighter; }
+.border-bottom-gray-1px { border-bottom: 1px solid $gray-lighter; }
+.border-bottom-gray-2px { border-bottom: 2px solid $gray-lighter; }
+.border-none { border: none; }
+@include bp(xs) {
+  .xs-border-none { border: none; }
+};
+
 .title-with-gray-bg {
   font-size: 1.1em;
   font-weight: 600;

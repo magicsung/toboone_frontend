@@ -142,6 +142,10 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
   margin-right: -10px;
 }
 
+.absolute { position: absolute !important; }
+.z-1 {z-index: -1;}
+.z10 {z-index: 10;}
+.z100 {z-index: 100;}
 .relative { position: relative !important; }
 .inline-block { display: inline-block !important; }
 ul.inline-block > li { display: inline-block !important; }
@@ -153,6 +157,7 @@ ul.inline-block > li { display: inline-block !important; }
 
 
 .color-white { color: $white; }
+.color-white-opacity { color: rgba(255,255,255,.8) }
 .color-black { color: $black; }
 .color-primary { color: $brand-primary; }
 .color-primary-light { color: $brand-primary-light; }
@@ -210,8 +215,6 @@ ul.inline-block > li { display: inline-block !important; }
 .order-2 { @include order(2); }
 .order-3 { @include order(3); }
 .order-4 { @include order(4); }
-
-.border-none { border: none; }
 
 ul.dot {
   list-style: disc;

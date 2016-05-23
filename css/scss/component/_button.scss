@@ -192,3 +192,47 @@ ul.gray-item li a {
   background-color: rgba(0,0,0,0);
   border: 0;
 }
+
+
+// social button
+.btn-fb {
+  background-color: $fb-blue;
+  color: $white;
+  &:hover {
+    background-color: $fb-blue-light;
+    color: $white;
+  }
+}
+.btn-weibo {
+  background-color: $weibo-red;
+  color: $white;
+  &:hover {
+    background-color: $weibo-red-light;
+    color: $white;
+  }
+}
+.btn-google {
+  background-color: $white;
+  color: $google-red;
+  border: 1px solid $google-red;
+  &:hover {
+    background-color: $white;
+    color: $google-red-light;
+  }
+}
+.btn-wechat {
+  background-color: $wechat-green;
+  color: $white;
+  &:hover {
+    background-color: $wechat-green-light;
+    color: $white;
+  }
+}
+.btn-qq {
+  background-color: $qq-blue;
+  color: $white;
+  &:hover {
+    background-color: $qq-blue-light;
+    color: $white;
+  }
+}
