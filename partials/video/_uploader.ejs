@@ -20,9 +20,7 @@
     <div class="">
       <p>
         將影片提交到 達人網 即表示您同意遵守達人網的
-        <a href="#">《服務條款》</a>
-        和
-        <a href="#">《社群規範》</a>
+        <a href="#" id="upload-policy">《服務條款》</a>。
       </p>
       <ul class="dot ml-25">
         <li>不允許商業、政治或是任何形式的廣告內容。達人網只允許用於個人和非營利。</li>
@@ -32,3 +30,13 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $('#upload-policy').click(function(event) {
+      event.preventDefault();
+      var t = $('#upload-policy-popover');
+      openPopout(t);
+    });
+  });
+</script>

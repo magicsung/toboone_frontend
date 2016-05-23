@@ -6,11 +6,9 @@ html, body {
   color: $gray;
 }
 html.noscroll {
-  @include bp(xs) {
-    position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-  };
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }
 #main-content {
   min-height: 100%;
@@ -166,6 +164,6 @@ span.material-icons {
   background-position: right bottom;
   background-repeat: no-repeat;
   @include bp(xs) {
-    background-image: none !important;  
+    background-image: none !important;
   };
 }
