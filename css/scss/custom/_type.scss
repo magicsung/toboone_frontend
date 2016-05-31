@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
 .top-50 { top: 50%; @include translateY( -50% ); }
 .right-5 { right: 5px; }
 .width-80 { width: 80px; }
+.pointer { cursor: pointer; }
 
 @include bp(xs) {
   .xs-pl-15 { padding-left: 15px; }

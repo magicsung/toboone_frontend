@@ -2,6 +2,7 @@
   width: 100px;
   height: 100px;
   @include border-radius(50px);
+  overflow: hidden;
 }
 .thumbnail-small {
   width: 50px;
@@ -34,4 +35,21 @@
   line-height: 2.8em;
   font-size: .8em;
   text-align: center;
+}
+
+.avatar .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  background-color: $mask;
+  line-height: 2em;
+  color: $white;
+  @include transition(all .3s);
+}
+
+.avatar:hover .hover {
+  top: 65%;
 }
