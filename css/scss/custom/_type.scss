@@ -73,6 +73,8 @@ h1, h2, h3, h4, h5, h6, p, a{ color: $gray; }
   @for $i from 1 to 11 { .xs-w#{$i*10} { width: #{$i*10%} !important; } }
 };
 
+.mw100 { max-width: 100%; }
+.mh100 { max-height: 100%; }
 .h100 { height: 100%; }
 .h100-31 { height: calc( 100% - 31px); }
 .mt-1 { margin-top: 1px; }
