@@ -7,7 +7,7 @@
   background-color: $bg-light;
   @include border-radius(3px);
 }
-.progress-bar::after {
+.progress-bar > .progress-bar-inner {
   content: "";
   width: 50%;
   height: 100%;
