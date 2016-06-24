@@ -31,6 +31,13 @@ app.get('/register', function(req, res){
     title: '註冊 Tobeone 達人影音網'
   } );
 });
+app.get('/register_confirm_email', function(req, res){
+  res.render( __dirname + '/views/register_confirm_email', {
+    layout: 'layout-login',
+    sidebar: false,
+    title: '發送認證信'
+  } );
+});
 app.get('/forgot-pwd', function(req, res){
   res.render( __dirname + '/views/forgot-pwd', {
     layout: 'layout-login',
