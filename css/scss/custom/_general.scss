@@ -30,6 +30,11 @@ a:focus {
   padding-bottom: 6px;
   font-weight: normal;
 }
+.under-line-1px {
+  border-bottom: 1px solid $gray-lighter;
+  padding-bottom: 6px;
+  font-weight: normal;
+}
 
 .border { border: 1px solid $gray-lighter; }
 .border-right-gray-1px { border-right: 1px solid $gray-lighter; }

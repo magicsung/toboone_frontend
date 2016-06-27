@@ -96,6 +96,12 @@ app.get('/edit-profile', function(req, res){
     title: '編輯個人資料'
   } );
 });
+app.get('/notice', function(req, res){
+  res.render( __dirname + '/views/notice', {
+    sidebar: true,
+    title: '通知'
+  } );
+});
 app.get('/search', function(req, res){
   res.render( __dirname + '/views/search-result', {
     sidebar: true,
