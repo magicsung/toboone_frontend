@@ -1,6 +1,6 @@
 ####Download node.js from [node.js](https://nodejs.org/en/)
 
-> $ cd TaiwanGoodsFrontEnd
+> $ cd to_be_one
 
 > $ npm install
 
