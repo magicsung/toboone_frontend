@@ -11,11 +11,11 @@
 
       <div class="edit-profile pd-15 clearfix">
 
-        <div class="thumbnail avatar edit-avatar relative table-cell pull-left mr-15 xs-w100 text-center">
-          <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" class="thumbnail" />
-          <span class="hover"><label for="new-avatar" class="pointer">編輯</label></span>
-          <input type="file" name="new-avatar" id="new-avatar">
+        <div class="table-cell pull-left mr-15 xs-w100 text-center thumbnail edit-avatar relative">
+          <img src="http://dummyimage.com/100x100/cccccc/fff&text=avatar" alt="" />
+          <label for="new-avatar" class="pointer hover">編輯</label>
         </div>
+        <input type="file" name="new-avatar" id="new-avatar" class="hidden">
 
         <% include ./profile/_profile-form.ejs %>
 
