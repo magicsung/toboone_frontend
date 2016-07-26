@@ -1,11 +1,6 @@
 "use strict";
 
 $( document ).ready(function() {
-  // mobile header menu
-  $('#xs-menu-action').click(function() {
-    $('html').toggleClass('noscroll');
-  });
-
   // dropdown-menu
   $(document).on('click', function(event) {
     var target = $( event.target );
