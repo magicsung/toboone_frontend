@@ -38,13 +38,12 @@
     <a href="#">展開全部...</a>
   </div>
   <% if (typeof video == 'undefined') { %>
-    <div class="video mt-15 relative inline-block">
-      <a href="/video/xxx">
-        <img src="http://dummyimage.com/640x360/cccccc/fff&text=play-video" alt="" />
-        <div class="overlay">
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/b-JD5I_B6LY" frameborder="0" allowfullscreen></iframe> -->
+    <div class="row">
+      <div class="mt-15 relative inline-block col-md-8 col-xs-12">
+        <div class="thumbnail-wrap thumbnail-wrap-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/b-JD5I_B6LY" frameborder="0" allowfullscreen></iframe>
         </div>
-      </a>
+      </div>
     </div>
   <% } %>
 </div>
