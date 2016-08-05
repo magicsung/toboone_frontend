@@ -38,3 +38,13 @@ $( document ).ready(function() {
     }
   });
 });
+
+// ad-banner swipe
+$( document ).ready(function() {
+  $("#ad-carousel").swiperight(function() {
+	  $(this).carousel('prev');
+	});
+  $("#ad-carousel").swipeleft(function() {
+    $(this).carousel('next');
+  });
+});
