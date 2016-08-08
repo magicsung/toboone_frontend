@@ -200,3 +200,29 @@ span.material-icons {
   max-width: 100%;
   max-height: 100%;
 }
+.play-effect {
+  cursor: pointer;
+  @include transition(all .1s);
+  color: $light-mask;
+  border-color: $light-mask;
+}
+.play-effect::after {
+  font-size: 5em;
+  font-family: 'Material Icons';
+  content: "\E037";
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  position: absolute;
+  z-index: 100;
+  top: 50%; left: 50%;
+  @include translate( -50%, -50%);
+  // circle
+  line-height: 1em;
+  border: 2px solid;
+  height: 1em; width: 1em;
+  @include border-radius(50%);
+}
+.play-effect:hover {
+  color: $dark-mask;
+  border-color: $dark-mask;
+}
