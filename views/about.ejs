@@ -14,6 +14,18 @@
             </a>
           </div>
           <div class="pd-10 mt-10">
+            <a href="/mission">
+              <i class="red-dot ml-20"></i>
+              網站理念
+            </a>
+          </div>
+          <div class="pd-10 mt-10">
+            <a href="/feature">
+              <i class="red-dot ml-20"></i>
+              網站特色
+            </a>
+          </div>
+          <div class="pd-10 mt-10">
             <a href="/policies">
               <i class="red-dot ml-20"></i>
               服務條款
@@ -30,7 +42,7 @@
               <i class="red-dot ml-20"></i>
               常見問題
             </a>
-          </div>　 　
+          </div>
 
         </div>
       </div>
@@ -50,6 +62,12 @@
           <% break; %>
         <% case "/question" : %>
           <% include ../partials/about/_question.ejs %>
+          <% break; %>
+        <% case "/feature" : %>
+          <% include ../partials/about/_feature.ejs %>
+          <% break; %>
+        <% case "/mission" : %>
+          <% include ../partials/about/_mission.ejs %>
           <% break; %>
       <% } %>
 

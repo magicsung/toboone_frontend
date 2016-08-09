@@ -143,6 +143,20 @@ app.get('/question', function(req, res){
     url: req.originalUrl
   } );
 });
+app.get('/feature', function(req, res){
+  res.render( __dirname + '/views/about', {
+    sidebar: false,
+    title: '網站特色',
+    url: req.originalUrl
+  } );
+});
+app.get('/mission', function(req, res){
+  res.render( __dirname + '/views/about', {
+    sidebar: false,
+    title: '網站理念',
+    url: req.originalUrl
+  } );
+});
 
 http.listen(8800, "0.0.0.0", function(){
   console.log('listening on *:8800');
