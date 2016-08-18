@@ -208,6 +208,7 @@ span.material-icons {
 }
 .play-effect::after {
   font-size: 5em;
+  @include bp(xs) {font-size: 3em;};
   font-family: 'Material Icons';
   content: "\E037";
   -webkit-font-feature-settings: 'liga';
